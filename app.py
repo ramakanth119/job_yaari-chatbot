@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from openai import OpenAI
+#from openai import OpenAI
 
 # Load dataset
 df = pd.read_csv("jobs.csv")
@@ -37,3 +37,4 @@ if query:
     answer = response.choices[0].message.content.strip()
     st.write("### ✅ Answer")
     st.write(answer)
+
